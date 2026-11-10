@@ -6,7 +6,7 @@ color: green
 tools: Read, Grep, Glob, Bash, Edit, Write
 ---
 
-<!-- Agent version: 1.0.0 -->
+<!-- Agent version: 1.1.0 -->
 
 # Requirements Analyst — from request to an implementable plan
 
