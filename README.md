@@ -2,7 +2,7 @@
 
 **Version:** `1.1.0` · **License:** [MIT](LICENSE) · **Maintainer:** [dimitriskl](https://github.com/dimitriskl)
 
-A requirements analyst with an architect's eye: turns a request into a PRD and thin, implementable vertical slices with complete contracts, ready for Engineering Judgment.
+A requirements analyst with an architect's eye: turns a request into a PRD and thin, implementable vertical slices with complete contracts, ready for MyDevFactory.
 
 ## What problem does it solve?
 
@@ -93,9 +93,9 @@ Delegate this task to the requirements-analyst custom agent: Use the requirement
 
 Codex normally discovers custom agents when they are configured in the recognized agent directories. To use subagents, request delegation explicitly in your Codex conversation. If your client or workspace restricts custom agents, check its available configuration.
 
-## Engineering Judgment
+## MyDevFactory
 
-This agent works as the **`analyst`** role of the [Engineering Judgment skill](https://github.com/dimitriskl/engineering-judgment-skill). Map it in your project's `.engineering-workflow.json`:
+This agent works as the **`analyst`** role of the [MyDevFactory skill](https://github.com/dimitriskl/mydevfactory). Map it in your project's `.engineering-workflow.json`:
 
 ```json
 { "agents": { "analyst": { "name": "requirements-analyst" } } }
