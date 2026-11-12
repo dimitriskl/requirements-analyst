@@ -1,8 +1,8 @@
 # Requirements Analyst — Claude Code & Codex
 
-**Version:** `1.0.0` · **License:** [MIT](LICENSE) · **Maintainer:** [dimitriskl](https://github.com/dimitriskl)
+**Version:** `1.1.0` · **License:** [MIT](LICENSE) · **Maintainer:** [dimitriskl](https://github.com/dimitriskl)
 
-A requirements analyst with an architect's eye: turns a request into a PRD and thin, implementable vertical slices with complete contracts, ready for Engineering Judgment.
+A requirements analyst with an architect's eye: turns a request into a PRD and thin, implementable vertical slices with complete contracts, ready for MyDevFactory.
 
 ## What problem does it solve?
 
@@ -18,11 +18,11 @@ This is an **agent definition**, not an executable app or a guarantee of correct
 | --- | --- |
 | [`.claude/agents/requirements-analyst.md`](.claude/agents/requirements-analyst.md) | Claude Code custom subagent (install-ready name). |
 | [`.codex/agents/requirements-analyst.toml`](.codex/agents/requirements-analyst.toml) | Codex custom subagent (install-ready name). |
-| [`releases/v1.0.0/requirements-analyst-v1.0.0.md`](releases/v1.0.0/requirements-analyst-v1.0.0.md) | Versioned Claude Code release snapshot. |
-| [`releases/v1.0.0/requirements-analyst-v1.0.0.toml`](releases/v1.0.0/requirements-analyst-v1.0.0.toml) | Versioned Codex release snapshot. |
+| [`releases/v1.1.0/requirements-analyst-v1.1.0.md`](releases/v1.1.0/requirements-analyst-v1.1.0.md) | Versioned Claude Code release snapshot. |
+| [`releases/v1.1.0/requirements-analyst-v1.1.0.toml`](releases/v1.1.0/requirements-analyst-v1.1.0.toml) | Versioned Codex release snapshot. |
 | [`VERSION`](VERSION) and [`CHANGELOG.md`](CHANGELOG.md) | Release version and history. |
 
-The `.md` and `.toml` files are **alternatives for different tools**, not two agents that must run together. Install one or both depending on what you use. All agent definitions in this release declare version `1.0.0` in a comment; the release snapshots also contain the version in their filename. **Do not rename the install-ready files to include a version suffix**: the stable filenames are intentional for reliable upgrades.
+The `.md` and `.toml` files are **alternatives for different tools**, not two agents that must run together. Install one or both depending on what you use. All agent definitions in this release declare version `1.1.0` in a comment; the release snapshots also contain the version in their filename. **Do not rename the install-ready files to include a version suffix**: the stable filenames are intentional for reliable upgrades.
 
 ## Installation — project scope (recommended)
 
@@ -93,9 +93,9 @@ Delegate this task to the requirements-analyst custom agent: Use the requirement
 
 Codex normally discovers custom agents when they are configured in the recognized agent directories. To use subagents, request delegation explicitly in your Codex conversation. If your client or workspace restricts custom agents, check its available configuration.
 
-## Engineering Judgment
+## MyDevFactory
 
-This agent works as the **`analyst`** role of the [Engineering Judgment skill](https://github.com/dimitriskl/engineering-judgment-skill). Map it in your project's `.engineering-workflow.json`:
+This agent works as the **`analyst`** role of the [MyDevFactory skill](https://github.com/dimitriskl/mydevfactory). Map it in your project's `.engineering-workflow.json`:
 
 ```json
 { "agents": { "analyst": { "name": "requirements-analyst" } } }
@@ -115,7 +115,7 @@ Codex custom agents **inherit the parent's sandbox and approval policy**; the TO
 
 ## Updates and release policy
 
-The current release is **v1.0.0**. Versioned snapshots are immutable. For future updates, edit the stable `.md` and `.toml` source definitions, bump `VERSION`, document changes in `CHANGELOG.md`, add corresponding `releases/vX.Y.Z/` snapshots and create a Git tag `vX.Y.Z`. We use semantic versioning as a documentation convention (MAJOR = breaking instruction/behavior changes, MINOR = new capabilities, PATCH = corrections).
+The current release is **v1.1.0**. Versioned snapshots are immutable. For future updates, edit the stable `.md` and `.toml` source definitions, bump `VERSION`, document changes in `CHANGELOG.md`, add corresponding `releases/vX.Y.Z/` snapshots and create a Git tag `vX.Y.Z`. We use semantic versioning as a documentation convention (MAJOR = breaking instruction/behavior changes, MINOR = new capabilities, PATCH = corrections).
 
 To upgrade, replace your installed stable `.md`/`.toml` files with the files from the desired tagged release. Check diffs before replacing custom local modifications.
 
